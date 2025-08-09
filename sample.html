@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sample College Website</title>
+  <section id="faculty">
+  <h2>Meet Our Faculty</h2>
+  <div class="faculty">
+    <!-- existing faculty members -->
+  </div>
+  <div style="text-align: center; margin-top: 20px;">
+    <a href="teachers.html" class="btn">Meet Our Teachers</a>
+  </div>
+</section>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  line-height: 1.6;
+  /* Background galaxy image */
+  background: url('https://images.unsplash.com/photo-1462331940025-496dfbfc7564?auto=format&fit=crop&w=1470&q=80') no-repeat center center fixed;
+  background-size: cover;
+  color: white; /* Make text white for contrast */
+}
+    }
+    header {
+      background: #004080;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+    nav {
+      background: #003366;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 10px 0;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 8px 15px;
+      border-radius: 5px;
+      transition: background 0.3s ease;
+    }
+    nav a:hover {
+      background: #0066cc;
+    } 
+    section {
+  padding: 20px;
+  max-width: 1000px;
+  margin: auto;
+  background: rgba(0, 0, 0, 0.6); /* semi-transparent black */
+  margin-top: 20px;
+  border-radius: 5px;
+  color: white;
+}
+    h2 {
+      color: #004080;
+    }
+    .courses, .faculty {
+      display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+      gap: 15px;
+    }
+    .course, .faculty-member {
+      background: #e6f0ff;
+      padding: 15px;
+      border-radius: 5px;
+    }
+    .btn {
+  display: inline-block;
+  background: #0066cc;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+  cursor: pointer;
+}
+.btn:hover {
+  background: #004080;
+}
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: #003366;
+      color: white;
+      margin-top: 30px;
+    }
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Bright Future College</h1>
+    <p>Empowering Students for a Brighter Tomorrow</p>
+  </header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About Us</a>
+    <a href="#courses">Courses</a>
+    <a href="#faculty">Faculty</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="home">
+    <h2>Welcome to Bright Future College</h2>
+    <p>At Bright Future College, we provide quality education with modern infrastructure and experienced faculty. Join us to build your successful career.</p>
+  </section>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>Founded in 1995, Bright Future College has been a leading institution offering undergraduate and postgraduate programs across various disciplines. Our mission is to nurture talent and foster innovation.</p>
+  </section>
+
+  <section id="courses">
+    <h2>Our Courses</h2>
+    <div class="courses">
+      <div class="course">
+        <h3>Bachelor of Computer Science</h3>
+        <p>Learn programming, algorithms, data structures, and software development.</p>
+      </div>
+      <div class="course">
+        <h3>Bachelor of Business Administration</h3>
+        <p>Study management principles, marketing, finance, and entrepreneurship.</p>
+      </div>
+      <div class="course">
+        <h3>Bachelor of Arts</h3>
+        <p>Explore humanities, languages, and social sciences with critical thinking.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="faculty">
+    <h2>Meet Our Faculty</h2>
+    <div class="faculty">
+      <div class="faculty-member">
+        <h4>Dr. Anil Kumar</h4>
+        <p>Head of Computer Science Department</p>
+      </div>
+      <div class="faculty-member">
+        <h4>Ms. Priya Sharma</h4>
+        <p>Senior Lecturer - Business Administration</p>
+      </div>
+      <div class="faculty-member">
+        <h4>Prof. Ramesh Gupta</h4>
+        <p>Head of Arts Department</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: info@brightfuturecollege.edu</p>
+    <p>Phone: +91 98765 43210</p>
+    <p>Address: 123 College Street, Cityname, State, Country</p>
+  </section>
+
+  <footer>
+    <p>© 2025 Bright Future College. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
